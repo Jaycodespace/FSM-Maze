@@ -2,8 +2,9 @@ import pygame
 
 class Player:
     def __init__(self):
-        self.rect = pygame.Rect(50, 500, 50, 50) 
-        self.color = (0, 0, 255) 
+        self.image = pygame.image.load('MazeGame/images/player.png').convert_alpha()  
+        self.image = pygame.transform.scale(self.image, (100, 130))
+        self.rect = self.image.get_rect(topleft=(10, 470))  
         self.speed = 20
 
     def move(self, keys):
@@ -17,4 +18,4 @@ class Player:
             self.rect.y += self.speed
 
     def render(self, screen):
-        pygame.draw.rect(screen, self.color, self.rect)
+        screen.blit(self.image, self.rect)
