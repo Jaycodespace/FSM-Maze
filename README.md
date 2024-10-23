@@ -5,17 +5,17 @@ The game is named “FSM GAME – MazeCrawl”. It is a 2D maze built using Pyth
 
 States: 
 
-•	MenuState (Initial State): The main menu where the player can start the game.
-•	PlayingState: Active gameplay where the player controls the character.
-•	PauseState: Allows the player to pause the game and resume the game.
-•	GameOverState: When the player collides with an obstacle, leading to a game over.
-•	FinishState: When the player successfully navigates the maze and crosses the finish line.
+  MenuState (Initial State): The main menu where the player can start the game.
+  PlayingState: Active gameplay where the player controls the character.
+	PauseState: Allows the player to pause the game and resume the game.
+	GameOverState: When the player collides with an obstacle, leading to a game over.
+	FinishState: When the player successfully navigates the maze and crosses the finish line.
 
 Character Movements:
-•	↑ 	Move Up
-•	↓	Move Down
-•	←	Move Left
-•	→	Move Right
+	↑ 	Move Up
+	↓	Move Down
+	←	Move Left
+	→	Move Right
 
 
 FSM DESIGN
